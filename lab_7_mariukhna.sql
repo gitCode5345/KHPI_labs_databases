@@ -62,6 +62,7 @@ INSERT INTO `news` (`id`, `category_id`, `name`, `description`) VALUES
 INSERT INTO `news` (`category_id`, `name`, `description`) VALUES
 (5,	'Здоров\'я в цифрах: Як стежити за своїм станом (Ще одна частина)',	'Поради щодо покращення здоров\'я та самопочуття...');
 
+DROP TABLE IF EXISTS `rating`;
 CREATE TABLE `rating` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `news_id` int(11) NOT NULL,
