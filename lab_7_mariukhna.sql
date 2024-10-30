@@ -79,7 +79,7 @@ INSERT INTO `rating` (`id`, `news_id`, `ip_address`, `rating`) VALUES
 (4,	3,	'192.168.1.1',	5),
 (5,	4,	'192.168.1.2',	2);
 
--- Помилка в запиті (1062): Duplicate entry '1-192.168.1.1' for key 'id_news'
+-- Помилка в запиті (1062): Duplicate entry '1-192.168.1.1' for key 'news_id'
 INSERT INTO `rating` (`news_id`, `ip_address`, `rating`) VALUES
 (1, '192.168.1.1', 3);
 
