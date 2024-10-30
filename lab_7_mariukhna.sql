@@ -44,7 +44,7 @@ INSERT INTO `comments` (`id`, `news_id`, `comment`, `user_id`) VALUES
 DROP TABLE IF EXISTS `news`;
 CREATE TABLE `news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `category_id` int(11) DEFAULT NULL,
+  `category_id` int(11) NOT NULL,
   `name` VARCHAR(255) NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`id`),
