@@ -34,7 +34,7 @@ CREATE TABLE `comments` (
   CONSTRAINT `comments_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
-INSERT INTO `comments` (`id, `news_id`, `comment`, `user_id`) VALUES
+INSERT INTO `comments` (`id`, `news_id`, `comment`, `user_id`) VALUES
 (1, 1, 'Чудова стаття!', 1),
 (2, 1, 'Цікавий огляд, дякую!', 1),
 (3, 2, 'Дуже актуально.', 2),
